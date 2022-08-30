@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    font-size: 1rem;
+}
+
+#bcg-img {
+    width: 525px;
+    border: 1px solid black;
+}
+
+#main-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header, form, form + div {
+    flex-grow: 1;
+    border: 1px solid black;
+}
