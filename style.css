@@ -71,5 +71,18 @@ label {
     font-size: 1.065rem;
 }
 
+form + div {
+    font-size: 1.065rem;
+    padding: 25px 0 0 60px;
+}
+
+button {
+    width: 220px;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    font-size: 1.065rem;
+    font-weight: 700;
+}
+
 
 
