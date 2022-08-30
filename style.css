@@ -106,3 +106,38 @@ button {
 }
 
 
+@media (min-width: 950px) and (max-width: 1200px) {
+    form {
+        align-items: center;
+    }
+
+    .group {
+        justify-content: center;
+    }
+
+    .group > div {
+        align-items: center;
+        margin-right: 80px;
+    }
+
+    h2 {
+        margin-right: 80px;
+    }
+}
+
+@media (max-width: 950px) {
+    form {
+        align-items: center;
+        padding-right: 60px;
+    }
+
+    .group {
+        justify-content: center;
+    }
+
+    .group > div {
+        align-items: center;
+        margin-right: 0;
+    }
+}
+
