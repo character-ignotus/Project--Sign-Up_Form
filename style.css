@@ -2,16 +2,18 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    outline: none;
 }
 
 body {
     min-height: 100vh;
     display: flex;
     font-size: 1rem;
+    font-family: 'Roboto';
 }
 
 #bcg-img {
-    width: 525px;
+    width: 625px;
     border: 1px solid black;
 }
 
@@ -21,7 +23,53 @@ body {
     flex-direction: column;
 }
 
-header, form, form + div {
-    flex-grow: 1;
-    border: 1px solid black;
+header, form + div {
+    flex-grow: 2;
 }
+
+form {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    flex-grow: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.group > div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+
+
+h2, header {
+    font-size: 1.45rem;
+    font-weight: 800;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 50px 40px 30px;
+}
+
+input {
+    width: 275px;
+    height: 3.25ch;
+    font-size: 1.065rem;
+}
+
+label {
+    font-size: 1.065rem;
+}
+
+
+
