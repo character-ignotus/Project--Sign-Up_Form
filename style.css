@@ -42,6 +42,7 @@ body {
 #logo div {
     height: 80px;
     width: 80px;
+    margin-left: 5px;
     background-image: url(Images/EmpireLogo.svg);
     background-size: cover;
     background-position: center;
@@ -100,8 +101,8 @@ header {
 
 input {
     width: 275px;
-    height: 3.25ch;
-    font-size: 1.04rem;
+    height: 3.5ch;
+    font-size: 1rem;
     padding: 7.5px 10px;
     border-radius: 4.5px;
     border: 1.75px solid rgba(162,149,125, 0.4);
@@ -109,7 +110,7 @@ input {
 }
 
 label {
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.175ch;
     font-weight: 700;
     color: rgba(56,47,32,255);
@@ -120,16 +121,22 @@ form + div {
     padding: 25px 0 42px 60px;
 }
 
+form + div > p {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 button {
     width: 220px;
     padding: 10px 0;
     margin-bottom: 25px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     border-width: 0;
     border-radius: 9px;
     color: rgba(233,231,224,255);
     background-color: rgba(200,116,74,255);
+    box-shadow: 4px 4px 5px rgba(138,131,117,255);
 }
 
 
@@ -154,6 +161,7 @@ button {
     header {
         justify-content: center;
         text-align: center;
+        padding-top: 20px;
     }
 
     form + div {
@@ -180,6 +188,7 @@ button {
     }
 
     header {
+        padding-top: 20px;
         justify-content: center;
         text-align: center;
     }
@@ -211,6 +220,7 @@ button {
     }
 
     header {
+        padding-top: 20px;
         justify-content: center;
         text-align: center;
     }
