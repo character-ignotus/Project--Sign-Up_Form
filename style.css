@@ -48,6 +48,18 @@ body {
     background-position: center;
 }
 
+#credit {
+    padding: 10px 0;
+    color: white;
+    align-self: center;
+    font-size: 0.65rem;
+    opacity: 0.65;
+}
+
+a {
+    color: white;
+}
+
 #main-section {
     flex-grow: 1;
     display: flex;
