@@ -14,7 +14,9 @@ body {
 
 #bcg-img {
     width: 625px;
-    border: 1px solid black;
+    background-image: url(Images/Stormtrooper.png);
+    background-size: cover;
+    background-position: center;
 }
 
 #main-section {
@@ -49,6 +51,9 @@ form {
     margin-right: 80px;
 }
 
+.group > div:nth-child(odd) {
+    margin-bottom: 20px;
+}
 
 h2, header {
     font-size: 1.45rem;
@@ -58,31 +63,33 @@ h2, header {
 header {
     display: flex;
     align-items: flex-end;
-    padding: 0 50px 40px 30px;
+    padding: 0 50px 40px 60px;
 }
 
 input {
     width: 275px;
     height: 3.25ch;
-    font-size: 1.065rem;
+    font-size: 1.04rem;
+    padding: 7.5px 10px;
 }
 
 label {
-    font-size: 1.065rem;
+    font-size: 1.04rem;
 }
 
 form + div {
-    font-size: 1.065rem;
-    padding: 25px 0 0 60px;
+    font-size: 1.04rem;
+    padding: 25px 0 42px 60px;
 }
 
 button {
     width: 220px;
     padding: 10px 0;
     margin-bottom: 25px;
-    font-size: 1.065rem;
+    font-size: 1.04rem;
     font-weight: 700;
+    border-width: 0;
+    border-radius: 9px;
 }
-
 
 
