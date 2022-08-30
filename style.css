@@ -27,11 +27,11 @@ body {
 
 header, form + div {
     flex-grow: 2;
+    background-color: rgba(209,202,187,255);
 }
 
 form {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    background-color: rgba(223,215,198,255);
     flex-grow: 0.5;
     display: flex;
     flex-direction: column;
@@ -51,13 +51,17 @@ form {
     margin-right: 80px;
 }
 
+.title {
+    margin-top: 20px;
+}
+
 .group > div:nth-child(odd) {
     margin-bottom: 20px;
 }
 
 h2, header {
-    font-size: 1.45rem;
-    font-weight: 800;
+    font-size: 1.5rem;
+    font-weight: 1000;
 }
 
 header {
@@ -71,6 +75,9 @@ input {
     height: 3.25ch;
     font-size: 1.04rem;
     padding: 7.5px 10px;
+    border-radius: 4.5px;
+    border: 1.75px solid rgba(145,138,124,255);
+    background-color: rgba(223,215,198,255);
 }
 
 label {
@@ -86,7 +93,7 @@ button {
     width: 220px;
     padding: 10px 0;
     margin-bottom: 25px;
-    font-size: 1.04rem;
+    font-size: 1.1rem;
     font-weight: 700;
     border-width: 0;
     border-radius: 9px;
