@@ -14,11 +14,11 @@ body {
     min-height: 100vh;
     display: flex;
     font-size: 1rem;
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
 }
 
 #bcg-img {
-    width: 625px;
+    width: 550px;
     background-image: url(Images/Stormtrooper.png);
     background-size: cover;
     background-position: center;
@@ -32,7 +32,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 3.75rem;
-    font-family: 'StarWars';
+    font-family: 'StarWars', 'Times New Roman', Times, serif;
     height: 100px;
     color: black;
     background-color: rgba(255,255,255,0.5);
@@ -119,6 +119,7 @@ input {
     border-radius: 4.5px;
     border: 1.75px solid rgba(162,149,125, 0.4);
     background-color: rgba(223,215,198,255);
+    color: rgba(56,47,32,255);
 }
 
 label {
@@ -150,6 +151,38 @@ button {
     color: rgba(233,231,224,255);
     background-color: rgba(200,116,74,255);
     box-shadow: 4px 4px 5px rgba(138,131,117,255);
+}
+
+@media (min-width: 1200px) and (max-width: 1320px) {
+    form {
+        align-items: center;
+    }
+
+    .group {
+        justify-content: center;
+    }
+
+    .group > div {
+        align-items: center;
+        margin-right: 80px;
+    }
+
+    h2 {
+        margin-right: 80px;
+    }
+
+    header {
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    form + div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 20px 0 0;
+    }
 }
 
 
