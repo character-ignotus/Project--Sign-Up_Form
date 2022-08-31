@@ -153,6 +153,15 @@ button {
     box-shadow: 4px 4px 5px rgba(138,131,117,255);
 }
 
+label[for='phone'] span {
+    font-size: 0.75rem;
+    font-weight: 1000;
+    font-style: italic;
+    color: rgb(134, 57, 27);
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
 input + span {
     position: relative;
 }
@@ -220,6 +229,10 @@ input:valid + span::before {
 
 #phone:valid:placeholder-shown {
     border: 1.75px solid rgba(162,149,125, 0.4);
+}
+
+#phone:valid:focus {
+    border: 2.25px solid rgb(37, 150, 190);
 }
 
 #phone:valid:placeholder-shown + span::before {
