@@ -27,37 +27,37 @@
             </div>
             <div class="group 1">
                 <div>
-                    <label for="first_name">First Name</label>
-                    <input type="text" id="first_name" name="first_name">
+                    <label for="first_name">First Name</label> 
+                    <input type="text" id="first_name" name="first_name" pattern="([A-Z][a-zA-Z]*)" placeholder=" " required>
                     <span></span>
                 </div>
                 <div>
                     <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" name="last_name">
+                    <input type="text" id="last_name" name="last_name" pattern="([A-Z][a-zA-Z]*)" placeholder=" " required>
                     <span></span>
                 </div>
             </div>
             <div class="group 2">
                 <div>
                     <label for="email">E-Mail</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" placeholder=" " required>
                     <span></span>
                 </div>
                 <div>
                     <label for="phone">Phone number</label>
-                    <input type="tel" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone"> 
                     <span></span>
                 </div>
             </div>
             <div class="group 3">
                 <div>
                     <label for="pwd">Password</label>
-                    <input type="password" id="pwd" name="password" minlength="3">
+                    <input type="password" id="pwd" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder=" " required>
                     <span></span>
                 </div>
                 <div>
                     <label for="pwd-confirm">Confirm Password</label>
-                    <input type="password" id="pwd-confirm" name="password_confirmation">
+                    <input type="password" id="pwd-confirm" name="password_confirmation" placeholder=" " required>
                     <span></span>
                 </div>
             </div>
