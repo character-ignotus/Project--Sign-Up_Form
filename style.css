@@ -175,7 +175,9 @@ input:invalid:not(:focus):not(:placeholder-shown) {
     border: 2.25px solid rgba(193,59,55);
 }
 
-input:valid {
+input[type='text']:valid,
+input[type='tel']:valid,
+input[type='email']:valid {
     border: 2.25px solid green;
 }
 
@@ -196,18 +198,31 @@ input:invalid:not(:focus):not(:placeholder-shown) + span::before {
     content: '⚠️';
 }
 
-input:valid + span::before {
+input[type='text']:valid + span::before,
+input[type='tel']:valid + span::before,
+input[type='email']:valid + span::before {
     position: absolute;
     bottom: 6.5px;
     right: 4px;
     content: '✔️';
 }
 
+#pwd:valid + span::before {
+    position: absolute;
+    bottom: 6.5px;
+    right: 4px;
+    content: '✔️';
+}
+
+#pwd:valid {
+    border: 2.25px solid green;
+}
+
 #pwd:focus + span::after {
     position: absolute;
     top: 1px;
     left: 3px;
-    content: 'Must contain upper,lower & number characters';
+    content: 'Must contain upper, lower & number characters';
     font-size: 0.75rem;
     font-weight: 600;
     color: rgba(56,47,32,255);
@@ -237,6 +252,58 @@ input:valid + span::before {
 
 #phone:valid:placeholder-shown + span::before {
     content: '';
+}
+
+#pwd-confirm:focus + span::after {
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    content: 'Must match password';
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(56,47,32,255);
+}
+
+.invalid#pwd-confirm:not(:focus):not(:placeholder-shown) + span::after {
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    content: 'Passwords must match';
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(193,59,55);
+}
+
+.invalid:not(:focus):not(:placeholder-shown) {
+    border: 2.25px solid rgba(193,59,55);
+}
+
+.invalid:not(:focus):not(:placeholder-shown) + span::before {
+    position: absolute;
+    bottom: 6.5px;
+    right: 4px;
+    content: '⚠️';
+}
+
+.valid:valid + span::before {
+    position: absolute;
+    bottom: 6.5px;
+    right: 4px;
+    content: '✔️';
+}
+
+.valid:valid {
+    border: 2.25px solid green;
+}
+
+.valid#pwd-confirm:valid:focus + span::after {
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    content: 'Passwords match';
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(56,47,32,255);
 }
 
 
@@ -293,6 +360,24 @@ input:valid + span::before {
     }
 
     #pwd:invalid:not(:focus):not(:placeholder-shown) + span::after {
+        top: 1px;
+        left: -135px;
+        width: 250px;
+    }
+
+    #pwd-confirm:focus + span::after {
+        top: 3.5px;
+        left: -135px;
+        width: 250px;
+    }
+
+    .invalid#pwd-confirm:not(:focus):not(:placeholder-shown) + span::after {
+        top: 1px;
+        left: -135px;
+        width: 250px;
+    }
+
+    .valid#pwd-confirm:valid:focus + span::after {
         top: 1px;
         left: -135px;
         width: 250px;
@@ -357,6 +442,24 @@ input:valid + span::before {
         left: -135px;
         width: 250px;
     }
+
+    #pwd-confirm:focus + span::after {
+        top: 3.5px;
+        left: -135px;
+        width: 250px;
+    }
+
+    .invalid#pwd-confirm:not(:focus):not(:placeholder-shown) + span::after {
+        top: 1px;
+        left: -135px;
+        width: 250px;
+    }
+
+    .valid#pwd-confirm:valid:focus + span::after {
+        top: 1px;
+        left: -135px;
+        width: 250px;
+    }
 }
 
 @media (max-width: 950px) {
@@ -409,6 +512,24 @@ input:valid + span::before {
     }
 
     #pwd:invalid:not(:focus):not(:placeholder-shown) + span::after {
+        top: 1px;
+        left: -135px;
+        width: 250px;
+    }
+
+    #pwd-confirm:focus + span::after {
+        top: 3.5px;
+        left: -135px;
+        width: 250px;
+    }
+
+    .invalid#pwd-confirm:not(:focus):not(:placeholder-shown) + span::after {
+        top: 1px;
+        left: -135px;
+        width: 250px;
+    }
+
+    .valid#pwd-confirm:valid:focus + span::after {
         top: 1px;
         left: -135px;
         width: 250px;
@@ -477,6 +598,24 @@ input:valid + span::before {
         left: -135px;
         width: 250px;
     }
+
+    #pwd-confirm:focus + span::after {
+        top: 3.5px;
+        left: -135px;
+        width: 250px;
+    }
+
+    .invalid#pwd-confirm:not(:focus):not(:placeholder-shown) + span::after {
+        top: 1px;
+        left: -135px;
+        width: 250px;
+    }
+
+    .valid#pwd-confirm:valid:focus + span::after {
+        top: 1px;
+        left: -135px;
+        width: 250px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -514,6 +653,24 @@ input:valid + span::before {
     }
 
     #pwd:invalid:not(:focus):not(:placeholder-shown) + span::after {
+        top: 1px;
+        left: -135px;
+        width: 250px;
+    }
+
+    #pwd-confirm:focus + span::after {
+        top: 3.5px;
+        left: -135px;
+        width: 250px;
+    }
+
+    .invalid#pwd-confirm:not(:focus):not(:placeholder-shown) + span::after {
+        top: 1px;
+        left: -135px;
+        width: 250px;
+    }
+
+    .valid#pwd-confirm:valid:focus + span::after {
         top: 1px;
         left: -135px;
         width: 250px;
