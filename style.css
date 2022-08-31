@@ -130,7 +130,7 @@ label {
 }
 
 form + div {
-    font-size: 1.04rem;
+    font-size: 1rem;
     padding: 25px 0 42px 60px;
 }
 
@@ -151,6 +151,11 @@ button {
     color: rgba(233,231,224,255);
     background-color: rgba(200,116,74,255);
     box-shadow: 4px 4px 5px rgba(138,131,117,255);
+}
+
+input:focus {
+    border: 2.25px solid rgb(37, 150, 190);
+    box-shadow: 3px 4px 4px rgba(138,131,117,0.4);
 }
 
 @media (min-width: 1200px) and (max-width: 1320px) {
