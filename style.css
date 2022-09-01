@@ -366,13 +366,13 @@ input[type='email']:valid + span::before {
     #pwd:focus + span::after {
         top: 3.5px;
         left: -135px;
-        width: 275px;
+        width: 300px;
     }
 
     #pwd:invalid:not(:focus):not(:placeholder-shown) + span::after {
         top: 1px;
         left: -135px;
-        width: 275px;
+        width: 300px;
     }
 
     #pwd-confirm:focus + span::after {
@@ -447,13 +447,13 @@ input[type='email']:valid + span::before {
     #pwd:focus + span::after {
         top: 3.5px;
         left: -135px;
-        width: 275px;
+        width: 300px;
     }
 
     #pwd:invalid:not(:focus):not(:placeholder-shown) + span::after {
         top: 1px;
         left: -135px;
-        width: 275px;
+        width: 300px;
     }
 
     #pwd-confirm:focus + span::after {
@@ -524,13 +524,13 @@ input[type='email']:valid + span::before {
     #pwd:focus + span::after {
         top: 3.5px;
         left: -135px;
-        width: 275px;
+        width: 300px;
     }
 
     #pwd:invalid:not(:focus):not(:placeholder-shown) + span::after {
         top: 1px;
         left: -135px;
-        width: 275px;
+        width: 300px;
     }
 
     #pwd-confirm:focus + span::after {
@@ -609,13 +609,13 @@ input[type='email']:valid + span::before {
     #pwd:focus + span::after {
         top: 3.5px;
         left: -135px;
-        width: 275px;
+        width: 300px;
     }
 
     #pwd:invalid:not(:focus):not(:placeholder-shown) + span::after {
         top: 1px;
         left: -135px;
-        width: 275px;
+        width: 300px;
     }
 
     #pwd-confirm:focus + span::after {
@@ -671,13 +671,13 @@ input[type='email']:valid + span::before {
     #pwd:focus + span::after {
         top: 3.5px;
         left: -135px;
-        width: 275px;
+        width: 300px;
     }
 
     #pwd:invalid:not(:focus):not(:placeholder-shown) + span::after {
         top: 1px;
         left: -135px;
-        width: 275px;
+        width: 300px;
     }
 
     #pwd-confirm:focus + span::after {
