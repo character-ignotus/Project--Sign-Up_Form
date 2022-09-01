@@ -151,6 +151,7 @@ button {
     color: rgba(233,231,224,255);
     background-color: rgba(200,116,74,255);
     box-shadow: 4px 4px 5px rgba(138,131,117,255);
+    cursor: pointer;
 }
 
 label[for='phone'] span {
@@ -160,6 +161,12 @@ label[for='phone'] span {
     color: rgb(134, 57, 27);
     padding: 0 5px;
     margin: 0 5px;
+}
+
+p a {
+    color: rgba(200,116,74,255);
+    font-weight: 1000;
+    cursor: pointer;
 }
 
 input + span {
