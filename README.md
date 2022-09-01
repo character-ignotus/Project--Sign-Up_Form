@@ -1,7 +1,7 @@
 # Project: "Sign-Up Form"
 
 ## Description of project: 
-A simple Star Wars themed Sign-Up Form, with a responsive layout for an imaginary service built using HTML, CSS & a little bit of JavaScript with client side validation for the name, email & password inputs.
+A simple Star Wars themed Sign-Up Form, with a responsive layout for an imaginary service built using HTML, CSS & a little bit of JavaScript with client side validation for the name, email & password inputs. Sign-Up [here](https://character-ignotus.github.io/Project--Sign-Up_Form/).
 
 ## Form Elements
 
